@@ -21,9 +21,10 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Matthijs Luijten",
-  initials: "BJ",
+  initials: "ML",
   location: "Nijmegen, the Netherlands",
   locationLink: "https://www.google.com/maps/place/Nijmegen",
+  role: "Deep Learning Engineer",
   about:
     "Full Stack Engineer focused on building products with extra attention to detail",
   summary:
@@ -53,10 +54,20 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Radboud University",
+      degree: "MSc in Artificial Intelligence",
+      description: `MSc internship: Improvement of unsupervised VQ-VAE model for anomaly detection.
+        MSc thesis: On the automatic detection of progression of white matter hyperintensities
+        (WMH) in Cerebral Small Vessel Disease (CSVD)`,
+      start: "2020",
+      end: "2023",
+    },
+    {
+      school: "Radboud University",
+      degree: "BSc in Artificial Intelligence",
+      description: "Some relevant courses: Algorithms and Data Structures, Database management System, Optimisation, Artificial Intelligence, Embedded System Programming and Computer Networks.",
+      start: "2017",
+      end: "2020",
     },
   ],
   work: [
