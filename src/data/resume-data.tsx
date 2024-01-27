@@ -56,16 +56,14 @@ export const RESUME_DATA = {
     {
       school: "Radboud University",
       degree: "MSc in Artificial Intelligence",
-      description: `MSc internship: Improvement of unsupervised VQ-VAE model for anomaly detection.
-        MSc thesis: On the automatic detection of progression of white matter hyperintensities
-        (WMH) in Cerebral Small Vessel Disease (CSVD)`,
+      description: "MSc thesis: On the automatic detection of progression of white matter hyperintensities (WMH) in Cerebral Small Vessel Disease (CSVD) \n MSc internship: Improvement of unsupervised VQ-VAE model for anomaly detection.",
       start: "2020",
       end: "2023",
     },
     {
       school: "Radboud University",
       degree: "BSc in Artificial Intelligence",
-      description: "Some relevant courses: Algorithms and Data Structures, Database management System, Optimisation, Artificial Intelligence, Embedded System Programming and Computer Networks.",
+      description: "BSc thesis: Does speech-based interaction improve the user experience of chatbots?",
       start: "2017",
       end: "2020",
     },
