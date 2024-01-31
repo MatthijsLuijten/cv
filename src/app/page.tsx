@@ -112,6 +112,7 @@ export default function Page() {
                       <a className="hover:underline" href={work.link}>
                         {work.company}
                       </a>
+
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
                           <Badge
@@ -135,20 +136,18 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description}
+                  <div className="flex flex-wrap gap-x-2 mt-2">
+                    {work.badges.map((badge) => (
+                      <Badge
+                        key={badge}
+                        variant="secondary"
+                        className="align-middle text-xs"
+                      >
+                        {badge}
+                      </Badge>
+                    ))}
+                  </div>
                 </CardContent>
-                <div className="mt-2 text-sm">
-                  {work.links.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      className="mr-2 text-blue-600 hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {link.text}
-                    </a>
-                  ))}
-                </div>
               </Card>
             );
           })}
