@@ -135,6 +135,9 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
+                  {work.general_description}
+                </CardContent>
+                <CardContent className="mt-2 text-xs">
                   {work.description}
                 </CardContent>
               </Card>
@@ -157,14 +160,30 @@ export default function Page() {
                   </div>
                 </CardHeader>
                 <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2 text-xs">
+                        {education.description}
+                  </CardContent>
               </Card>
             );
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold">Technical Skills</h2>
+          <h6 className="inline-flex gap-x-1 font-semibold leading-none">Advanced Knowledge</h6>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+          <h6 className="inline-flex gap-x-1 font-semibold leading-none">Good Knowledge</h6>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.skills_good_knowledge.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+          <h6 className="inline-flex gap-x-1 font-semibold leading-none">Basic Knowledge</h6>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.skills_basic_knowledge.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
