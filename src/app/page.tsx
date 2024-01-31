@@ -158,8 +158,22 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2">{education.degree}</CardContent>
                 <CardContent className="mt-2 text-xs">
-                        {education.description}
-                  </CardContent>
+                  {typeof education.description === "string" ? (
+                    <p>{education.description}</p>
+                  ) : (
+                    education.description?.map((desc) => {
+                      return (
+                        <p key={desc} className="mb-1">
+                          <span className="mr-2">
+                            {"•"}
+                          </span>
+                          {desc}
+                        </p>
+                      );
+                    })
+                  )}
+                  
+                </CardContent>
               </Card>
             );
           })}
