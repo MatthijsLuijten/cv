@@ -128,11 +128,27 @@ export default function Page() {
                       {work.start} - {work.end}
                     </div>
                   </div>
-                  <h4 className="font-mono text-sm leading-none">{work.title}</h4>
+
+                  <h4 className="font-mono text-sm leading-none">
+                    {work.title}
+                  </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">{work.description}</CardContent>
-                {/* Add CardLinks component here */}
-                <CardLinks links={work.links} />
+                <CardContent className="mt-2 text-xs">
+                  {work.description}
+                </CardContent>
+                <div className="mt-2 text-sm">
+                  {work.links.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.url}
+                      className="mr-2 text-blue-600 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.text}
+                    </a>
+                  ))}
+                </div>
               </Card>
             );
           })}
