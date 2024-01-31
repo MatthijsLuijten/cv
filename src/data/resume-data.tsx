@@ -28,7 +28,7 @@ export const RESUME_DATA = {
   about:
     "",
   summary:
-    "As a deep learning engineer ",
+    "As a deep learning engineer, focusing on computer vision and medical imaging, ",
   avatarUrl: "https://avatars.githubusercontent.com/u/45688977?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -81,7 +81,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Present",
       description:
-        "During my time at Thirona, I enhanced the airway segmentation model, pushing it to detect even the trickiest airways on tougher CT scans. I effectively modified the algorithm to function on both cone-beam CT scans and traditional fan-beam CT scans. Both projects involved crafting specialized pipelines for training models and establishing evaluation frameworks for comparison with alternative methods. Besides that, I was involved in customer projects, developing biomarker reports that shed light on different lung characteristics.",
+        "During my time at Thirona, I primarily focused on the R&D of 3D segmentation algorithms for chest CT scans. My main contribution is improving the airway segmentation model, pushing it to detect even the trickiest airways on tougher CT scans. I effectively modified the algorithm to function on both cone-beam CT scans and traditional fan-beam CT scans. Both projects involved crafting specialized pipelines for training models and establishing evaluation frameworks for comparison with alternative methods. Besides that, I was involved in customer projects; developing biomarker reports that shed light on different lung characteristics.",
     },
     {
       company: "Radboud UMC (DIAG)",
@@ -89,10 +89,10 @@ export const RESUME_DATA = {
       badges: ["Medical Imaging", "MRI", , "UNets", "CNNs", "Tensorflow"],
       title: "Deep Learning Intern (thesis)",
       // logo: ClevertechLogo,
-      start: "2023",
-      end: "2022",
+      start: "2022",
+      end: "2023",
       description:
-        "Created a pipeline to automatically segment white matter hyperintensities in cerebral small vessel disease using brain MRI scans. Utilized this pipeline to detect the progression of these lesions and shed more light on the pathology behind this.",
+        "Created a pipeline to automatically segment white matter hyperintensities (WMH) in cerebral small vessel disease using brain MRI scans. The goal was to create a segmentation pipeline that can accurately identify and classify WMH and the transition zones between NAWM and WMH, in order to gain a better understanding of the underlying mechanisms behind WMH and their progression. By combining high-field MRI and IHC stainings, I studied the relationship between radiological and pathological changes in the brain, and identified potential therapeutic targets for reducing the impact of WMH on brain function.",
       links: [
         { url: "https://github.com/MatthijsLuijten/WMH_tool", text: "GitHub" },
         { url: "https://www.ai-for-health.nl/projects/wml_ex_vivo_brain_mri/", text: "Project Page" }
