@@ -87,12 +87,16 @@ export const RESUME_DATA = {
       company: "Radboud UMC (DIAG)",
       link: "https://www.diagnijmegen.nl/",
       badges: ["Medical Imaging", "MRI", , "UNets", "CNNs", "Tensorflow"],
-      title: "Deep Learning Engineer (thesis)",
+      title: "Deep Learning Intern (thesis)",
       // logo: ClevertechLogo,
       start: "2023",
       end: "2022",
       description:
         "Created a pipeline to automatically segment white matter hyperintensities in cerebral small vessel disease using brain MRI scans. Utilized this pipeline to detect the progression of these lesions and shed more light on the pathology behind this.",
+      links: [
+        { url: "https://github.com/MatthijsLuijten/WMH_tool", text: "GitHub" },
+        { url: "https://www.ai-for-health.nl/projects/wml_ex_vivo_brain_mri/", text: "Project Page" }
+      ]
     },
     {
       company: "Rabobank",
