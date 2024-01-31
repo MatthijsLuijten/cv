@@ -136,17 +136,6 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description}
-                  <div className="flex flex-wrap gap-x-2 mt-2">
-                    {work.badges.map((badge) => (
-                      <Badge
-                        key={badge}
-                        variant="secondary"
-                        className="align-middle text-xs"
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </div>
                 </CardContent>
               </Card>
             );

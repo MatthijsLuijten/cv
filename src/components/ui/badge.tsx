@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const badgeVariants = cva(
-  "inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap cursor-pointer", // Added cursor-pointer for the clickable effect
+  "inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap",
   {
     variants: {
       variant: {
@@ -26,23 +26,11 @@ const badgeVariants = cva(
 
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badgeVariants> {
-  href?: string; // Added href prop for the link
-}
+    VariantProps<typeof badgeVariants> {}
 
-function Badge({ className, variant, href, ...props }: BadgeProps) {
-  const handleClick = () => {
-    if (href) {
-      window.open(href, "_blank"); // Open the link in a new tab
-    }
-  };
-
+function Badge({ className, variant, ...props }: BadgeProps) {
   return (
-    <div
-      className={cn(badgeVariants({ variant }), className)}
-      onClick={handleClick} // Handle click event
-      {...props}
-    />
+    <div className={cn(badgeVariants({ variant }), className)} {...props} />
   );
 }
 
