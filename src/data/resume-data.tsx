@@ -28,7 +28,7 @@ export const RESUME_DATA = {
   about:
     "",
   summary:
-    "As a deep learning engineer, focusing on computer vision and medical imaging, ",
+    "With over one year of dedicated experience in deep learning, specifically focused on computer vision and medical imaging, I am passionate about leveraging AI to bring a positive change in the world. My interest and expertise lies in developing innovative solutions that bridge the gap between cutting-edge technology and real-world applications. I thrive in collaborative environments, where my strong teamwork and communication skills contribute to the collective success of projects. Eager to contribute my skills and knowledge to make a meaningful difference in the world through the power of AI.",
   avatarUrl: "https://avatars.githubusercontent.com/u/45688977?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -84,8 +84,8 @@ export const RESUME_DATA = {
         "During my time at Thirona, I primarily focused on the R&D of 3D segmentation algorithms for chest CT scans. My main contribution is improving the airway segmentation model, pushing it to detect even the trickiest airways on tougher CT scans. I effectively modified the algorithm to function on both cone-beam CT scans and traditional fan-beam CT scans. Both projects involved crafting specialized pipelines for training models and establishing evaluation frameworks for comparison with alternative methods. Besides that, I was involved in customer projects; developing biomarker reports that shed light on different lung characteristics.",
     },
     {
-      company: "Radboud UMC (DIAG)",
-      link: "https://www.diagnijmegen.nl/",
+      company: "Radboud UMC - Department of Medical Imaging and Computational pathology (DIAG)",
+      link: "https://www.computationalpathologygroup.eu/",
       badges: ["Medical Imaging", "MRI", , "UNets", "CNNs", "Tensorflow"],
       title: "Deep Learning Intern (thesis)",
       // logo: ClevertechLogo,
@@ -101,7 +101,7 @@ export const RESUME_DATA = {
     {
       company: "Rabobank",
       link: "https://www.rabobank.nl/",
-      badges: ["Computer Vision", "VQ-VAE", "CNNs", "Tensorflow", ""],
+      badges: ["Computer Vision", "VQ-VAE", "CNNs", "Tensorflow"],
       title: "AIOps intern (internship)",
       // logo: JojoMobileLogo,
       start: "2022",
@@ -110,14 +110,9 @@ export const RESUME_DATA = {
         "Improved an unsupervised VQ-VAE model for anomaly detection. Examined various parts of the model to determine where and how it can be enhanced. Various experiments such as two paper implementations.",
     },
   ],
-  skills: [
-    "Python",
-    "Tensorflow",
-    "ITK",
-    "Keras",
-  ],
-  skills_good_knowledge: ["R", "GIT", "Docker", "ITK"],
-  skills_basic_knowledge: ["Java", "Jenkins"],
+  skills: ["Python", "Tensorflow", "ITK", "Keras", "Linux"],
+  skills_good_knowledge: ["GIT", "Docker"],
+  skills_basic_knowledge: ["Java", "Jenkins", "R", "C++"],
   // projects: [
   //   {
   //     title: "Consultly",
